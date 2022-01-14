@@ -2,34 +2,39 @@
 
 @section('content')
 
-    <div>
+    <div class="cont">
         <h1>
             Voli
         </h1>
+        <div class="voli">
 
-        @foreach ($trips as $trip)
+            @foreach ($trips as $trip)
 
-            <p>
-                Partenza {{ $trip->departure }}
-            </p>
+                <div>
 
-            <p>
-                Destinazione {{ $trip->destination }}
-            </p>
+                    <p>
+                        Partenza: {{ $trip->departure }}
+                    </p>
 
-            <p>
-                Compania aerea {{ $trip->airline }}
-            </p>
+                    <p>
+                        Destinazione: {{ $trip->destination }}
+                    </p>
 
-            <p>
-                Prezzo {{ $trip->price }} &euro;
-            </p>
+                    <p>
+                        Compagnia aerea: {{ $trip->airline }}
+                    </p>
 
-            <p>
-                Data partenza {{ $trip->date }}
-            </p>
+                    <p>
+                        Prezzo: {{ $trip->price }} &euro;
+                    </p>
 
-        @endforeach
+                    <p>
+                        Data partenza: {{ $trip->date }}
+                    </p>
+                </div>
+
+            @endforeach
+        </div>
     </div>
 
 @endsection

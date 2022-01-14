@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.cont {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.voli {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.voli div {
+  border: 1px solid black;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.voli div p {
+  padding: 10px 50px;
+}
+
