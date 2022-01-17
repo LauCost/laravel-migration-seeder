@@ -6,6 +6,9 @@
         <h1>
             Voli
         </h1>
+        <h3>
+            <a href="{{ route('blog') }}">Blog</a>
+        </h3>
         <div class="voli">
 
             @foreach ($trips as $trip)
