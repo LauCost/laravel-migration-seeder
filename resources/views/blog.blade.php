@@ -1,21 +1,31 @@
 @extends('layouts.app')
 
 @section('content')
-    <div>
-        <h1>
-            Blog
-        </h1>
+    <main class="main">
 
-        <h3>
-            <a href="{{ route('trips') }}">Trips</a>
-        </h3>
-        @foreach ($posts as $post)
+        <div class="cont">
+            <h1>
+                Blog
+            </h1>
 
-            <h3>{{ $post->author }}</h3>
-            <div class=" col">{{ $post->text }}</div>
-            <div class="col">{{ $post->date }}</div>
+            <h3>
+                <a href="{{ route('trips') }}">Trips</a>
+            </h3>
+            <div class="conteni">
 
-        @endforeach
+                @foreach ($posts as $post)
+                    <div class="contenitore">
 
-    </div>
+                        <h3 class="autore">{{ $post->author }}</h3>
+                        <p class="paragrafo">{{ $post->text }}</p>
+                        <div class="date">{{ $post->date }}</div>
+
+                    </div>
+
+                @endforeach
+
+            </div>
+
+        </div>
+    </main>
 @endsection
